@@ -4,7 +4,7 @@ import "./index.css";
 import App from "./App.jsx";
 
 import { Provider } from "react-redux";
-import store from "../../redux_online_store/src/store.js";
+import store from "./store.js";
 import { NavbarProvider } from "./NavBarContext.jsx";
 import { WishlistProvider } from "./WishlistContext.jsx";
 
