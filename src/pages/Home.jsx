@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { fetchProduct } from "../../../redux_online_store/src/features/cartSlice";
-import ProductCard from "../../../redux_online_store/src/components/ProductCard";
+import { fetchProduct } from "../features/cartSlice";
+import ProductCard from "../components/ProductCard";
 import SearchBox from "../components/SearchBox";
 
 function Home() {
