@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { useWishlist } from "../../../redux_online_store/src/WishlistContext";
+import { useWishlist } from "../WishlistContext";
 
 const ProductCard = ({ product, searchTerm }) => {
   const { isInWishlist, addToWishlist, removeFromWishlist } = useWishlist();

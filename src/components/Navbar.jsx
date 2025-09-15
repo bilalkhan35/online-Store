@@ -1,7 +1,7 @@
 import { useSelector } from "react-redux";
 import { NavLink } from "react-router-dom";
 import { FaBars } from "react-icons/fa";
-import { useNavbar } from "../../../redux_online_store/src/NavBarContext";
+import { useNavbar } from "../NavBarContext";
 
 const Navbar = () => {
   const { isOpen, setIsOpen } = useNavbar();

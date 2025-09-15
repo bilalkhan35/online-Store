@@ -6,7 +6,7 @@ import {
   addToCart,
   removeFromCart,
   fetchProductById,
-} from "../../../redux_online_store/src/features/cartSlice";
+} from "../features/cartSlice";
 
 const Product = () => {
   const dispatch = useDispatch();

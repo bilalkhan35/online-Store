@@ -1,6 +1,6 @@
-import { useWishlist } from "../../../redux_online_store/src/WishlistContext";
+import { useWishlist } from "../WishlistContext";
 import ProductCard from "../components/ProductCard";
-import { addToCart } from "../../../redux_online_store/src/features/cartSlice";
+import { addToCart } from "../features/cartSlice";
 import { useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
 

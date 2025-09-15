@@ -1,13 +1,9 @@
 import { useEffect, startTransition } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { openModal } from "../../../redux_online_store/src/features/modalSlice";
+import { openModal } from "../features/modalSlice";
 
-import { useNavbar } from "../../../redux_online_store/src/NavBarContext";
-import {
-  removeItem,
-  increase,
-  decrease,
-} from "../../../redux_online_store/src/features/cartSlice";
+import { useNavbar } from "../NavBarContext";
+import { removeItem, increase, decrease } from "../features/cartSlice";
 
 function Cart() {
   const dispatch = useDispatch();
