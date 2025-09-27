@@ -41,8 +41,8 @@ function Home() {
       <div className="flex flex-col md:flex-row items-center justify-between gap-4 mb-6">
         <SearchBox
           searchQuery={searchQuery}
-          selectedCategory={selectedCategory}
           setSearchQuery={setSearchQuery}
+          selectedCategory={selectedCategory}
           setSelectedCategory={setSelectedCategory}
         />
       </div>
@@ -54,7 +54,11 @@ function Home() {
           {filtered.length > 0 ? (
             filtered.map((product, index) => {
               return (
-                <ProductCard key={product?.id || index} product={product} />
+                <ProductCard
+                  key={product?.id || index}
+                  product={product}
+                  searchTerm={searchQuery}
+                />
               );
             })
           ) : (

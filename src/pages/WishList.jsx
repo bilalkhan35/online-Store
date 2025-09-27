@@ -3,6 +3,7 @@ import ProductCard from "../components/ProductCard";
 import { addToCart } from "../features/cartSlice";
 import { useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
+import toast from "react-hot-toast";
 
 const Wishlist = () => {
   const dispatch = useDispatch();
@@ -11,7 +12,8 @@ const Wishlist = () => {
 
   const moveToCart = (product) => {
     dispatch(addToCart(product)); // ✅ properly dispatch action
-    removeFromWishlist(product.id);
+    toast.success("Product moved to cart");
+    removeFromWishlist(product.id); //vanishes from the wishlist after moving to cart
   };
 
   return (
